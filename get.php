@@ -6,16 +6,12 @@
 	$cardType = filter_input(INPUT_GET, 'card_type');
 	$toppings = filter_input(INPUT_GET, 'topping', FILTER_SANITIZE_SPECIAL_CHARS, FILTER_REQUIRE_ARRAY);
 
-	print_r($toppings);
-
 	// Set Defaults 
 	$firstName = (isset($firstName)) ? $firstName : '';
 	$lastName = (isset($lastName)) ? $lastName : '';
 	$password = (isset($password)) ? $password : '';
 	$cardType = (isset($cardType)) ? $cardType : '';
 	$toppings = ($toppings !== NULL) ? $toppings : array();
-
-	print_r($toppings);
 ?>
 
 <form method="get" action="get.php">

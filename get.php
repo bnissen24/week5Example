@@ -13,7 +13,7 @@
 	$cardType = (isset($cardType)) ? $cardType : '';
 	$toppings = ($toppings !== NULL) ? $toppings : array();
 ?>
-
+<head><title>GET EXAMPLE</title></head>
 <form method="get" action="get.php">
 
 	<!-- First Name -->

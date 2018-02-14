@@ -11,9 +11,9 @@
 	$lastName = (isset($lastName)) ? $lastName : '';
 	$password = (isset($password)) ? $password : '';
 	$cardType = (isset($cardType)) ? $cardType : '';
-	$toppings = (isset($toppings)) ? $toppings : array();
+	$toppings = ($toppings !== NULL) ? $toppings : array();
 ?>
-
+<head><title>POST EXAMPLE</title></head>
 <form method="post" action="post.php">
 	<!-- First Name -->
 	<label for="firstName">First Name</label>
